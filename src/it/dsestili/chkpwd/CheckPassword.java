@@ -1,3 +1,4 @@
+package it.dsestili.chkpwd;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.MessageDigest;
