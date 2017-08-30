@@ -55,7 +55,7 @@ public class CheckPassword
 				
 				if(password.equals(dbPwd))
 				{
-					String queryGetBaseDir = getProperty("query.getBaseDir");
+					String queryGetBaseDir = getProperty("query.getBaseDir.utenti");
 					
 					statement = connection.prepareStatement(queryGetBaseDir);
 					statement.setString(1, userName);
