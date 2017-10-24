@@ -1,4 +1,5 @@
 package it.dsestili.chkpwd;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.MessageDigest;
@@ -53,7 +54,7 @@ public class CheckPassword
 				byte[] data = md.digest();
 				password = byteArray2Hex(data);
 				
-				if(password.equals(dbPwd))
+				if(password.equalsIgnoreCase(dbPwd))
 				{
 					String queryGetBaseDir = getProperty("query.getBaseDir.utenti");
 					
